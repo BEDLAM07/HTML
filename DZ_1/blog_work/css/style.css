@@ -1,0 +1,140 @@
+.wrap{
+	width: 1100px;
+	margin: 30px auto 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+/*начало левый блок*/
+
+.wrap_sidebar{
+	height: 100%;
+	width: 23%;
+	float: left;
+}
+.author_info{
+	text-align: center;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	font-weight: 300;
+}
+.author_info img{
+	border-radius: 50%;
+	padding-bottom: 10px;
+}
+.author_info h3{
+	text-transform: uppercase;
+	padding-bottom: 10px;
+
+}
+.author_info span{
+	text-transform: initial;
+	display: block;
+}
+.author_info .author_text{
+	font-weight: bold;
+	text-align: left;
+}
+.author_info .author_left{
+	text-align: left;
+	line-height: 25px;
+	padding-bottom: 30px;
+}
+.main_menu{
+	margin-top: 15px;
+    padding-top: 8px;
+}
+.main_menu ul{
+	padding-left:0px;
+}
+.main_menu li{
+	list-style: none;
+	margin-top: 2px;
+}
+.main_menu li.active a, 
+.main_menu li a:hover{
+	background-color: #03644e;
+	color:#fff;
+	padding: 10px 22px;
+}
+.main_menu li a{
+	display: block;
+	color:#000;
+	padding: 10px 5px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+}
+.category{
+	margin-top: 15px;
+	padding-top: 2px;
+	width: 80%;
+}
+.category h3{
+	text-align: center;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.category h3 span{
+	display: inline-block;
+    background-color: #fff;
+    position: relative;
+    padding: 0 10px;
+}
+.category h3:before{
+	display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width:1000px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute;              /* абсолютное позиционирование для управления линиями */
+    border-bottom: 1px solid #9ac1b8;/* бордер псевдо дива, т.е. сама линия */
+    top:50%;                         /* позиционирование по вертикали */
+    right: 160px;  
+}
+.category h3:after{
+	display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #9ac1b8;
+    top:50%;
+    left: 160px; 
+}
+.category ul{
+	padding-left: 10px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+.category li{
+	list-style: none;
+	margin: 25px 0;
+}
+.category li a{
+	color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+}
+.category li span{
+	color:#7cc2b2;
+}
+
+/*конец левый блок*/
+
+.wrap_content{
+	background: #0f0;
+	height: 400px;
+	width: 50%;
+	float: left;
+}
+aside{
+	background: #00f;
+	height: 400px;
+	width: 27%;
+	float: right;
+}
